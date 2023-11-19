@@ -1,0 +1,8 @@
+version: "2"
+services:
+  webserver:
+    image: dockerzhiyong/php5.2.17-fpm:latest
+    ports:
+      - "8181:80"
+    volumes:
+      - ./var/www/html:/var/www/html
